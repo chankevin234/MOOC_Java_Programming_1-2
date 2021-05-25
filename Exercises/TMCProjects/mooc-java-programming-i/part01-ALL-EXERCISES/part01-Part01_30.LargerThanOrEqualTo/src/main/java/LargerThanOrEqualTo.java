@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LargerThanOrEqualTo {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        // Write your program here
+        System.out.println("Give the first number:");
+        int first = Integer.valueOf(scan.nextLine());
+        System.out.println("Give a number:");
+        int second = Integer.valueOf(scan.nextLine());
+
+        if (first > second) {
+            System.out.println("The greater number is: " + first);
+        } else if (first < second) {
+            System.out.println("The greater number is: " + second);
+        } else {
+            System.out.println("The numbers are equal!");
+        }
+    }
+}
