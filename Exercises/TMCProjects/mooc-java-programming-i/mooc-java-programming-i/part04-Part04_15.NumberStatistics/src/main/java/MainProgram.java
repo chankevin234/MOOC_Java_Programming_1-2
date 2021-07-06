@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class MainProgram {
@@ -10,7 +9,40 @@ public class MainProgram {
 
         // In order for the tests to work, the objects must be created in the
         // correct order in the main program. First the object that tracks the total
-        // sum, secondly the object that tracks the sum of even numbers, 
+        // sum, secondly the object that tracks the sum of even numbers,
         // and lastly the one that tracks the sum of odd numbers!
+
+        Statistics allStats = new Statistics();
+        Statistics evenStats = new Statistics();
+        Statistics oddStats = new Statistics();
+
+//        stats.addNumber(3);
+//        stats.addNumber(5);
+//        stats.addNumber(1);
+//        stats.addNumber(2);
+
+        System.out.println("Enter numbers: ");
+        int userInput = Integer.valueOf(scanner.nextLine());
+
+        while (userInput >= 0) {
+            allStats.addNumber(userInput);
+            if (userInput % 2 == 0) {
+                evenStats.addNumber(userInput);
+            } else {
+                oddStats.addNumber(userInput);
+            }
+
+            userInput = Integer.valueOf(scanner.nextLine());
+        }
+
+//        System.out.println("Count: " + stats.getCount());
+        System.out.println("Sum: " + allStats.sum());
+        System.out.println("Sum of even numbers: " + evenStats.sum());
+        System.out.println("Sum of odd numbers: " + oddStats.sum());
+
+
+        //        System.out.println("Average: " + stats.average());
+
+
     }
 }
