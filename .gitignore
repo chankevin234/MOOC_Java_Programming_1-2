@@ -22,3 +22,4 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /part01-Part01_01.Sandbox/target/
+/Exercises/TMCProjects/mooc-java-programming-i/mooc-java-programming-i/part07-Part07_01.LiquidContainers/target/
