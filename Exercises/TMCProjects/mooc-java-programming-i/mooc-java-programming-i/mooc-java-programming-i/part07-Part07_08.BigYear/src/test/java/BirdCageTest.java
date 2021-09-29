@@ -6,7 +6,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 @Points("07-08.1 07-08.2 07-08.3")
-public class BirdDatabaseTest {
+public class BirdCageTest {
 
     @Rule
     public MockStdio io = new MockStdio();

@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.concurrent.BrokenBarrierException;
 
 public class mainProgram {
 
@@ -9,7 +10,9 @@ public class mainProgram {
         // as a parameter
 
         Scanner scan = new Scanner(System.in);
+        birdInterface bInterface = new birdInterface(scan);
 
+        bInterface.start();
     }
 
 }
