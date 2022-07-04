@@ -1,4 +1,3 @@
-
 public class SimpleDate {
 
     private int day;
@@ -49,6 +48,26 @@ public class SimpleDate {
         }
 
         return this.year - other.year - yearRemoved;
+    }
+
+    public boolean equals(Object object) {
+        //for the SimpleDate class, which returns true if the date of the object passed to the method as a parameter is
+        // the same as the date of the object used to call the method.
+
+        //checks if the object is null or a simpledate type
+        if (object == null || !(object instanceof SimpleDate)) {
+            return false;
+        }
+
+        //return true if the values of day, month, and year are the same
+        if (this.day == ((SimpleDate) object).day
+                && this.month == ((SimpleDate) object).month
+                && this.year == ((SimpleDate) object).year) {
+            return true;
+        }
+
+        //catch all the other possible options
+        return false;
     }
 
 }

@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class SimpleDate {
 
@@ -49,6 +50,18 @@ public class SimpleDate {
         }
 
         return this.year - other.year - yearRemoved;
+    }
+
+    public int hashCode() {
+        // calculates a hash for the SimpleDate object.
+        // Implement the calculation of the hash in way that there are
+        // as few similar hashes as possible between the years 1900 and 2100.
+
+        // if the simpledate's day, month, or year is null
+        return Objects.hash(day, month, year);//hash;
+
+
+
     }
 
 }
