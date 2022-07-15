@@ -52,6 +52,7 @@ public class Warehouse {
         return amount;
     }
 
+    @Override
     public String toString() {
         return "balance = " + this.balance + ", space left " + howMuchSpaceLeft();
     }
